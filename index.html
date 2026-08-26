@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My First Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            text-align: center;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: #111;
-            color: white;
-            padding: 60px 20px;
-        }
-
-        h1 {
-            font-size: 45px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-
-        section {
-            padding: 50px 20px;
-        }
-    </style>
+    <title>Welcome to My Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+    <!-- Header Navigation -->
     <header>
-        <h1>Welcome to My Website</h1>
-
-        <p>
-            I'm building my first website using GitHub and Cloudflare.
-        </p>
-
-        <a href="#about" class="button">Learn More</a>
+        <div class="nav-container">
+            <a href="index.html" class="logo">MyBrand</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-
-        <p>
-            This is my first website created directly inside GitHub.
-        </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fast, Reliable & Modern Web Solutions</h1>
+            <p>Deploying directly from GitHub to Cloudflare Pages for instant performance worldwide.</p>
+            <div class="cta-buttons">
+                <a href="#features" class="btn btn-primary">Explore Features</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
     </section>
 
-</body>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Lightning Fast</h3>
+                <p>Hosted across global edge networks to ensure microsecond load times for every user.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Secure by Default</h3>
+                <p>Protected with enterprise-grade SSL certificates and DDoS mitigation out of the box.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💻</div>
+                <h3>Git Integrated</h3>
+                <p>Automatic deployments directly from GitHub every time you commit code changes.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MyBrand. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
